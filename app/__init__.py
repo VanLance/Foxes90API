@@ -11,7 +11,7 @@ from .blog.routes import blog
 from .payments.routes import payments
 
 # imports for database stuff + login manager
-from .models import db, login
+
 from flask_migrate import Migrate
 
 # import cors stuff
@@ -19,6 +19,7 @@ from flask_cors import CORS
 
 # define/instantiate our Flask object... aka tell the computer that this is a flask app
 app = Flask(__name__)
+from .models import db, login
 
 # tell this app how it should be configured - over to the config.py file to set up for this!
 app.config.from_object(Config)

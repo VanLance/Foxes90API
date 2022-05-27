@@ -24,7 +24,7 @@ from .services import getActorImages # .services says "from the services file" r
 @app.route('/') # decorator says: this function is a route of the flask app 'app' with the url endpoint '/'
 def home():
     print('Hello, Foxes!')
-    x = choice(['Patrick','Elif','Amir','Cameron','Kyle','Brandt','Brandon','Devon'])
+    x = choice(['Kristen','Devante','Craig','Enrique','Nadia','Tyler','Sven','Donovan','Yasir','Brandon','Jose'])
     print(f'X has value {x}. This value will be passed into render_template as a keyword argument and the keyword used in a jinja expression in index.html')
     return render_template('index.html', name=x)
 
